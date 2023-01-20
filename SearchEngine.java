@@ -2,11 +2,12 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-    String[] stringList = new String[];
+    String[] stringList = new String[10];
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             System.out.println(url.getPath());
+            return null;
         } else {
             return "404 Not Found!";
         }
